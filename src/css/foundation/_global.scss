@@ -1,0 +1,12 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  overflow-y: scroll;
+  font-family: $font-jp;
+}
+::selection {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+}
