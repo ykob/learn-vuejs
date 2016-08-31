@@ -1,16 +1,24 @@
 {
   "meta": {
-    "domain": "http://www.tplh.net",
-    "website_name": "website name",
-    "keywords": "keyword base"
+    "domain": "http://ykob.github.io/learn-vuejs/",
+    "website_name": "learn vue.js",
+    "keywords": "vue.js"
   },
   "pages": {
     "index": {
-      "title": "page title",
-      "keywords": "keyword1, keyword2",
-      "description": "page description",
+      "title": "",
+      "keywords": "",
+      "description": "learn vue.js from elementary.",
       "path": "/",
-      "ogp_description": "page ogp description",
+      "ogp_description": "learn vue.js from elementary.",
+      "ogp_img": "ogp.jpg"
+    },
+    "start": {
+      "title": "start",
+      "keywords": "",
+      "description": "it's first step for learning vue.js.",
+      "path": "/start.html",
+      "ogp_description": "it's first step for learning vue.js.",
       "ogp_img": "ogp.jpg"
     }
   }
