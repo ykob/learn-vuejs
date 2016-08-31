@@ -1,2 +1,7 @@
 .l-page {
+  max-width: $max-width;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 50px;
 }

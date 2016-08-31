@@ -4,7 +4,9 @@ html {
 body {
   min-height: 100%;
   overflow-y: scroll;
+  color: $color-font;
   font-family: $font-jp;
+  background-color: #f9f9f9;
 }
 ::selection {
   color: #fff;

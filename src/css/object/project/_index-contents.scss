@@ -1,0 +1,23 @@
+.p-index-contents {
+  &__head {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    @include l-pc-l {
+      font-size: $break-point-pc / 100 * 5;
+    }
+    @include l-pc-and-tablet {
+      font-size: 5vw;
+    }
+    @include l-mobile {
+      font-size: $break-point-mobile / 100 * 5;
+    }
+  }
+  &__item {
+    a {
+      display: block;
+      color: $color-font;
+      text-decoration: none;
+    }
+  }
+}

@@ -5,7 +5,15 @@ block vars
     var page = pages.index;
 
 block content
-  div#app
-    p.
-      {{ message }}
-    input(v-model="message")
+  .p-index-contents
+    h1.p-index-contents__head
+      |learn vue.js
+    .p-index-contents__list
+      each elm in pages
+        if (elm.title !== '')
+          .p-index-contents__item
+            a(href = elm.path)
+              h2.p-index-contents__item-head
+                |#{elm.title}
+              p.p-index-contents__item-excerpt
+                |#{elm.description}
