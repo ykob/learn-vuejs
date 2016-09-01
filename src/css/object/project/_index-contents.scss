@@ -1,11 +1,32 @@
 .p-index-contents {
+  &__list {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -2%;
+  }
   &__item {
-    box-shadow: 4px 4px 0 0 #ddd;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 0 0 #ddd;
+    margin-bottom: 2%;
+    border-left: 6px solid #d44;
+    background-color: #fff;
+    @include l-pc-l {
+      width: 32%;
+    }
+    @include l-pc-s {
+      width: 49%;
+    }
+    @include l-tablet-and-mobile {
+      width: 100%;
+    }
     &-wrap {
+      width: 100%;
+      box-sizing: border-box;
       display: block;
       color: $color-font;
       text-decoration: none;
-      background-color: #fff;
       @include l-pc-l {
         padding: 40px;
       }
