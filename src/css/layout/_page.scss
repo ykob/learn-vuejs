@@ -1,28 +1,14 @@
 .l-page {
   max-width: $max-width;
   overflow: hidden;
-  box-sizing: border-box;
   margin: 0 auto;
   @include l-pc-l {
-    padding: 0 60px;
+    padding: 0 10%;
   }
   @include l-pc-and-tablet {
-    padding: 0 45px;
+    padding: 0 7.5%;
   }
   @include l-mobile {
-    padding: 0 30px;
-  }
-  &__article {
-    box-shadow: 3px 3px 0 0 #ddd;
-    background-color: #fff;
-    @include l-pc-l {
-      padding: 60px;
-    }
-    @include l-pc-and-tablet {
-      padding: 45px;
-    }
-    @include l-mobile {
-      padding: 30px;
-    }
+    padding: 0 5%;
   }
 }

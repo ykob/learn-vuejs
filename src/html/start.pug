@@ -5,7 +5,12 @@ block vars
     var page = pages.start;
 
 block content
-  .l-page__article
+  .c-article
+    .c-article__head
+      h1.c-article__title
+        |#{page.title}
+      p.c-article__excerpt
+        |#{page.description}
     div#app
       p.
         {{ message }}

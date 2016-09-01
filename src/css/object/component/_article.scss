@@ -1,0 +1,34 @@
+.c-article {
+  box-shadow: 3px 3px 0 0 #ddd;
+  background-color: #fff;
+  @include l-pc-l {
+    padding: 5% 10% 6%;
+  }
+  @include l-pc-and-tablet {
+    padding: 5% 7.5% 6%;
+  }
+  @include l-mobile {
+    padding: 5%;
+  }
+  &__head {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px dashed #ddd;
+    @include l-mobile {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dashed #ddd;
+    }
+  }
+  &__title {
+    line-height: 1;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 3px;
+    @include flexFontSize(3.2);
+  }
+  &__excerpt {
+    margin-bottom: 0;
+    letter-spacing: 2px;
+  }
+}
