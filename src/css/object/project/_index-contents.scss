@@ -3,21 +3,50 @@
     text-align: center;
     font-weight: 400;
     letter-spacing: 2px;
-    @include l-pc-l {
-      font-size: $break-point-pc / 100 * 5;
-    }
-    @include l-pc-and-tablet {
-      font-size: 5vw;
-    }
-    @include l-mobile {
-      font-size: $break-point-mobile / 100 * 5;
-    }
+    @include flexFontSize(5);
   }
   &__item {
-    a {
+    box-shadow: 4px 4px 0 0 #ddd;
+    &-wrap {
       display: block;
       color: $color-font;
       text-decoration: none;
+      background-color: #fff;
+      @include l-pc-l {
+        padding: 40px;
+      }
+      @include l-pc-and-tablet {
+        padding: 30px;
+      }
+      @include l-mobile {
+        padding: 20px;
+      }
+    }
+    &-head {
+      line-height: 1.25;
+      margin: 0 0 1rem;
+      letter-spacing: 2px;
+      @include flexFontSize(3.6);
+      font-weight: 400;
+    }
+    &-excerpt {
+      margin: 0;
+    }
+  }
+  //
+  // Init Interaction
+  //
+  &__item {
+    &-wrap {
+      transition-duration: 0.4s;
+    }
+  }
+  //
+  // Interaction
+  //
+  &__item {
+    &__wrap:hover {
+      background-color: #fff;
     }
   }
 }

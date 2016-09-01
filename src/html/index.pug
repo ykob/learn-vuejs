@@ -12,7 +12,7 @@ block content
       each elm in pages
         if (elm.title !== '')
           .p-index-contents__item
-            a(href = elm.path)
+            a(href = elm.path).p-index-contents__item-wrap
               h2.p-index-contents__item-head
                 |#{elm.title}
               p.p-index-contents__item-excerpt
