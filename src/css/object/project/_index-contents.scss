@@ -1,10 +1,4 @@
 .p-index-contents {
-  &__head {
-    text-align: center;
-    font-weight: 400;
-    letter-spacing: 2px;
-    @include flexFontSize(5);
-  }
   &__item {
     box-shadow: 4px 4px 0 0 #ddd;
     &-wrap {
@@ -26,11 +20,12 @@
       line-height: 1.25;
       margin: 0 0 1rem;
       letter-spacing: 2px;
-      @include flexFontSize(3.6);
+      @include flexFontSize(2.8);
       font-weight: 400;
     }
     &-excerpt {
       margin: 0;
+      letter-spacing: 2px;
     }
   }
   //

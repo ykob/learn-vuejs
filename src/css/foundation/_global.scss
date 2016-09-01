@@ -7,6 +7,9 @@ body {
   color: $color-font;
   font-family: $font-jp;
   background-color: #f9f9f9;
+  @include l-more-than-mobile {
+    @include fontSize(14);
+  }
   @include l-mobile {
     @include fontSize(12);
   }
