@@ -11,7 +11,7 @@ block content
         |#{page.title}
       p.c-article__excerpt
         |#{page.description}
-    div#app
+    #app
       p.
         {{ message }}
-      input(v-model="message")
+      input(type="text", v-model="message")
