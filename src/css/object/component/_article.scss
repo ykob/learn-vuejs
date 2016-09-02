@@ -31,4 +31,17 @@
     margin-bottom: 0;
     letter-spacing: 2px;
   }
+  &__content {
+    letter-spacing: 2px;
+    &-head {
+      @include l-more-than-mobile {
+        @include fontSize(18);
+        margin-top: 3rem;
+      }
+      @include l-mobile {
+        @include fontSize(14);
+        margin-top: 1.5rem;
+      }
+    }
+  }
 }

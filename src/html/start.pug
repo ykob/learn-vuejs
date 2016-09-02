@@ -11,7 +11,23 @@ block content
         |#{page.title}
       p.c-article__excerpt
         |#{page.description}
-    #app
-      p.
-        {{ message }}
-      input(type="text", v-model="message")
+    .c-article__content
+      h2.c-article__content-head
+        |Two-way binding
+      #app-twoway
+        p.
+          {{ message }}
+        input(type="text", v-model="message")
+      h2.c-article__content-head
+        |Rendering a List
+      #app-renderlist
+        ul
+          li(v-for="todo in todos").
+            {{ todo.text }}
+      h2.c-article__content-head
+        |Handle User input
+      #app-hundle-user-input
+        p.
+          {{ message }}
+        button(v-on:click="reverseMessage")
+          |Reverse Message
