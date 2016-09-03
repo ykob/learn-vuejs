@@ -3,7 +3,7 @@
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: -2%;
   }
   &__item {
@@ -14,9 +14,17 @@
     background-color: #fff;
     @include l-pc-l {
       width: 32%;
+      margin-right: 2%;
+      &:nth-of-type(3n) {
+        margin-right: 0;
+      }
     }
     @include l-pc-s {
       width: 49%;
+      margin-right: 2%;
+      &:nth-of-type(2n) {
+        margin-right: 0;
+      }
     }
     @include l-tablet-and-mobile {
       width: 100%;
@@ -41,7 +49,7 @@
       line-height: 1.25;
       margin: 0 0 1rem;
       letter-spacing: 2px;
-      @include flexFontSize(2.8);
+      @include flexFontSize(2.4);
       font-weight: 400;
     }
     &-excerpt {
