@@ -1,14 +1,14 @@
 const Vue = require('vue');
 
 export default function() {
-  new Vue({
+  const vm1 = new Vue({
     el: '#app-twoway',
     data: {
       message: 'Hello Vue.js!'
     }
   });
 
-  new Vue({
+  const vm2 = new Vue({
     el: '#app-renderlist',
     data: {
       todos: [
@@ -19,7 +19,7 @@ export default function() {
     }
   });
 
-  new Vue({
+  const vm3 = new Vue({
     el: '#app-hundle-user-input',
     data: {
       message: 'Hello Vue.js'
@@ -31,7 +31,7 @@ export default function() {
     }
   });
 
-  new Vue({
+  const vm4 = new Vue({
     el: '#app-all-together',
     data: {
       newTodo: '',

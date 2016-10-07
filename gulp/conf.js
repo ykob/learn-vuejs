@@ -48,6 +48,7 @@ module.exports.scripts = {
         babelrc: false,
         presets: ['es2015']
       }],
+      'aliasify',
       'envify'
     ]
   },
