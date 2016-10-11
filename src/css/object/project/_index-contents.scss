@@ -11,6 +11,7 @@
     box-shadow: 3px 3px 0 0 #ddd;
     margin-bottom: 2%;
     border-left: 6px solid #d44;
+    text-decoration: none;
     background-color: #fff;
     @include l-pc-l {
       width: 32%;
@@ -34,7 +35,6 @@
       box-sizing: border-box;
       display: block;
       color: $color-font;
-      text-decoration: none;
       @include l-pc-l {
         padding: 40px;
       }
@@ -61,16 +61,15 @@
   // Init Interaction
   //
   &__item {
-    &-wrap {
-      transition-duration: 0.4s;
-    }
+    transition-duration: 0.2s;
   }
   //
   // Interaction
   //
   &__item {
-    &__wrap:hover {
-      background-color: #fff;
+    &:hover {
+      box-shadow: 7px 7px 0 0 #eee;
+      transform: translate(-4px, -4px);
     }
   }
 }

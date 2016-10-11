@@ -3,6 +3,7 @@ html {
 }
 body {
   min-height: 100%;
+  line-height: 1.75;
   overflow-y: scroll;
   color: $color-font;
   font-family: $font-jp;
@@ -12,6 +13,13 @@ body {
   }
   @include l-mobile {
     @include fontSize(12);
+  }
+}
+a {
+  display: inline-block;
+  color: #d44;
+  &:hover {
+    text-decoration: none;
   }
 }
 input {
