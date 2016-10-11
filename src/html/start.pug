@@ -6,11 +6,7 @@ block vars
 
 block content
   .c-article
-    .c-article__head
-      h1.c-article__title
-        |#{page.title}
-      p.c-article__excerpt
-        |#{page.description}
+    include ./modules/_article-head.pug
     .c-article__content
       h2.c-article__content-head
         |Two-way binding

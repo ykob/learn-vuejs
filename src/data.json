@@ -13,7 +13,7 @@
       "ogp_description": "this is report for learning vue.js from first.",
       "ogp_img": "ogp.jpg"
     },
-    "start": {
+    "template": {
       "title": "template syntax",
       "keywords": "",
       "description": "",
