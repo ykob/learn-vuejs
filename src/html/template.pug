@@ -8,3 +8,16 @@ block content
   .c-article
     include ./modules/_article-head.pug
     .c-article__content
+      h2.c-article__content-head
+        |Using JavaScript Expressions
+      div#app
+        p number + 1 = {{ number + 1 }}
+        p ok = {{ ok ? 'yes' : 'no' }}
+      h2.c-article__content-head
+        |Filters
+      div#app-filters
+        p {{ message | capitalize('Arguments') }}
+      h2.c-article__content-head
+        |Directives
+      h2.c-article__content-head
+        |Shorthands
