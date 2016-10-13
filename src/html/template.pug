@@ -19,5 +19,13 @@ block content
         p {{ message | capitalize('Arguments') }}
       h2.c-article__content-head
         |Directives
+      div#app-directives
+        p(v-if="seen")
+          |Now you see me
+        p
+          a(v-bind:href="url")
+            |a link that is binded href
+        form(v-on:submit.prevent="onSubmit")
+          input(type="submit" value="submit")
       h2.c-article__content-head
         |Shorthands

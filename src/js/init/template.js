@@ -21,5 +21,18 @@ export default function() {
         return value.charAt(0).toUpperCase() + value.slice(1) + ' ' + arg1
       }
     }
+  });
+
+  const vm3 = new Vue({
+    el: '#app-directives',
+    data: {
+      seen: true,
+      url: 'http://www.tplh.net/'
+    },
+    methods: {
+      onSubmit: function() {
+        this.seen = false;
+      }
+    }
   })
 }
