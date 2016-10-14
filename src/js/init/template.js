@@ -34,5 +34,17 @@ export default function() {
         this.seen = false;
       }
     }
+  });
+
+  const vm4 = new Vue({
+    el: '#app-shorthands',
+    data: {
+      url: 'http://www.tplh.net/'
+    },
+    methods: {
+      doSomething: function() {
+        alert('Do Something.');
+      }
+    }
   })
 }

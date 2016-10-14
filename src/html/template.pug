@@ -29,3 +29,7 @@ block content
           input(type="submit" value="submit")
       h2.c-article__content-head
         |Shorthands
+      div#app-shorthands
+        p
+          a(:href="url" @click="doSomething")
+            |Do Something.
