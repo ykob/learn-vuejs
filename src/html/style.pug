@@ -1,0 +1,14 @@
+extends ./layout/_page.pug
+
+block vars
+  -
+    var page = pages.style;
+
+block content
+  .c-article
+    include ./modules/_article-head.pug
+    .c-article__content
+      h2.c-article__content-head
+        |Binding HTML Classes
+      #app-html-classes
+        

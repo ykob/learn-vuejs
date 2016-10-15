@@ -13,8 +13,16 @@
       "ogp_description": "this is report for learning vue.js from first.",
       "ogp_img": "ogp.jpg"
     },
+    "style": {
+      "title": "Class and Style Binding",
+      "keywords": "",
+      "description": "learn to binding inline style or class name.",
+      "path": "/style.html",
+      "ogp_description": "",
+      "ogp_img": "ogp.jpg"
+    },
     "template": {
-      "title": "template syntax",
+      "title": "Template Syntax",
       "keywords": "",
       "description": "learn the basic syntax of vue template.",
       "path": "/template.html",
@@ -22,7 +30,7 @@
       "ogp_img": "ogp.jpg"
     },
     "computed": {
-      "title": "computed properties",
+      "title": "Computed Properties",
       "keywords": "",
       "description": "test to get used to computed properties.",
       "path": "/computed.html",
@@ -30,7 +38,7 @@
       "ogp_img": "ogp.jpg"
     },
     "start": {
-      "title": "start",
+      "title": "Start",
       "keywords": "",
       "description": "it's first step for learning vue.js.",
       "path": "/start.html",
