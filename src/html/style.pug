@@ -28,3 +28,12 @@ block content
           v-bind:class="computeClassObject"
         )
           |computeClassObject: {{ computeClassObject }}
+      h2.c-article__content-head
+        |Binding Inline Styles
+      #app-inline-style
+        div(
+          v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"
+          )
+          |color: {{ activeColor }}
+          br
+          |fontSize: {{ fontSize }}

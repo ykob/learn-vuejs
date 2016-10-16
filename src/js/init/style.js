@@ -5,7 +5,7 @@ export default function() {
     el: '#app-html-classes',
     data: {
       isActive: true,
-      hasError: true,
+      hasError: false,
       classObject: {
         'is-active': true,
         'has-error': false
@@ -18,6 +18,14 @@ export default function() {
           'has-error': this.hasError && this.hasError.type === 'fatal'
         }
       }
+    }
+  })
+
+  const vm2 = new Vue({
+    el: '#app-inline-style',
+    data: {
+      activeColor: 'red',
+      fontSize: 30
     }
   })
 }
