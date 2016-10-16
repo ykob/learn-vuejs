@@ -5,10 +5,18 @@ export default function() {
     el: '#app-html-classes',
     data: {
       isActive: true,
-      hasError: false,
+      hasError: true,
       classObject: {
         'is-active': true,
         'has-error': false
+      }
+    },
+    computed: {
+      computeClassObject: function() {
+        return {
+          'is-active': this.isActive && !this.hasError,
+          'has-error': this.hasError && this.hasError.type === 'fatal'
+        }
       }
     }
   })

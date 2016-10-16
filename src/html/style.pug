@@ -23,3 +23,8 @@ block content
           v-bind:class="classObject"
         )
           |classObject: {{ classObject }}
+        p(
+          class="static"
+          v-bind:class="computeClassObject"
+        )
+          |computeClassObject: {{ computeClassObject }}
