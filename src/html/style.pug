@@ -11,4 +11,15 @@ block content
       h2.c-article__content-head
         |Binding HTML Classes
       #app-html-classes
-        
+        p(
+          class="static"
+          v-bind:class="{ 'is-active': isActive, 'has-error': hasError }"
+        )
+          |isActive : {{ isActive }}
+          br
+          |hasError : {{ hasError }}
+        p(
+          class="static"
+          v-bind:class="classObject"
+        )
+          |classObject: {{ classObject }}

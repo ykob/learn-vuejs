@@ -13,7 +13,7 @@ const init = () => {
     case '/start.html': initStart(); break;
     case '/computed.html': initComputed(); break;
     case '/template.html': initTemplate(); break;
-    case '/style.html': initTemplate(); break;
+    case '/style.html': initStyle(); break;
     default:
   }
 }
