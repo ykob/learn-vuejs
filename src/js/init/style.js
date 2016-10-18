@@ -25,7 +25,14 @@ export default function() {
     el: '#app-inline-style',
     data: {
       activeColor: 'red',
-      fontSize: 30
+      fontSize: 20,
+      styleObject: {
+        color: 'blue',
+        fontSize: '15px'
+      },
+      overridingStyles: {
+        color: 'green'
+      }
     }
-  })
+  });
 }

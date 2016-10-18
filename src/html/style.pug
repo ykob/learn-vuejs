@@ -31,9 +31,17 @@ block content
       h2.c-article__content-head
         |Binding Inline Styles
       #app-inline-style
-        div(
+        p(
           v-bind:style="{ color: activeColor, fontSize: fontSize + 'px' }"
           )
           |color: {{ activeColor }}
           br
           |fontSize: {{ fontSize }}
+        p(
+          v-bind:style="styleObject"
+          )
+          |binding styleObject.
+        p(
+          v-bind:style="[styleObject, overridingStyles]"
+          )
+          |binding styleObject and overridingStyles.
