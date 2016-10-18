@@ -13,10 +13,18 @@
       "ogp_description": "this is report for learning vue.js from first.",
       "ogp_img": "ogp.jpg"
     },
+    "conditional": {
+      "title": "Conditional Rendering",
+      "keywords": "",
+      "description": "learn how to write a conditional block in the Vue object.",
+      "path": "/conditional.html",
+      "ogp_description": "",
+      "ogp_img": "ogp.jpg"
+    },
     "style": {
       "title": "Class and Style Binding",
       "keywords": "",
-      "description": "learn to binding inline style or class name.",
+      "description": "learn how to binding inline style or class name.",
       "path": "/style.html",
       "ogp_description": "",
       "ogp_img": "ogp.jpg"
