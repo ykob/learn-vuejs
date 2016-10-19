@@ -3,6 +3,7 @@ import initIndex from './init/index.js'
 import initStart from './init/start.js'
 import initComputed from './init/computed.js'
 import initStyle from './init/style.js'
+import initConditional from './init/conditional.js'
 
 const { pathname } = window.location;
 
@@ -14,6 +15,7 @@ const init = () => {
     case '/computed.html': initComputed(); break;
     case '/template.html': initTemplate(); break;
     case '/style.html': initStyle(); break;
+    case '/conditional.html': initConditional(); break;
     default:
   }
 }

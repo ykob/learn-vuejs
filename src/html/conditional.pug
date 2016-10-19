@@ -9,5 +9,16 @@ block content
     include ./modules/_article-head.pug
     .c-article__content
       h2.c-article__content-head
-        |Conditional Rendering
-      #app
+        |If
+      #app-if
+        p(v-if="ok") Yes
+        p(v-else) No
+      h2.c-article__content-head
+        |Template v-if
+      #app-temp-if
+        template(v-if="ok")
+          h3 use template tags.
+          p a property named "ok" is true.
+        template(v-else)
+          h3 use template tags.
+          p a property named "ok" is false.
