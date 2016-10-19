@@ -17,7 +17,7 @@ body {
 }
 a {
   display: inline-block;
-  color: #d44;
+  color: $color-key;
   &:hover {
     text-decoration: none;
   }
