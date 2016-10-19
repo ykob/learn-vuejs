@@ -16,7 +16,7 @@
     "conditional": {
       "title": "Conditional Rendering",
       "keywords": "",
-      "description": "learn how to write a conditional block in the Vue object.",
+      "description": "how to write a conditional block in the Vue object.",
       "path": "/conditional.html",
       "ogp_description": "",
       "ogp_img": "ogp.jpg"
@@ -24,8 +24,16 @@
     "style": {
       "title": "Class and Style Binding",
       "keywords": "",
-      "description": "learn how to binding inline style or class name.",
+      "description": "how to binding inline style or class name.",
       "path": "/style.html",
+      "ogp_description": "",
+      "ogp_img": "ogp.jpg"
+    },
+    "computed": {
+      "title": "Computed Properties",
+      "keywords": "",
+      "description": "how to using computed properties.",
+      "path": "/computed.html",
       "ogp_description": "",
       "ogp_img": "ogp.jpg"
     },
@@ -34,14 +42,6 @@
       "keywords": "",
       "description": "learn the basic syntax of vue template.",
       "path": "/template.html",
-      "ogp_description": "",
-      "ogp_img": "ogp.jpg"
-    },
-    "computed": {
-      "title": "Computed Properties",
-      "keywords": "",
-      "description": "test to get used to computed properties.",
-      "path": "/computed.html",
       "ogp_description": "",
       "ogp_img": "ogp.jpg"
     },
