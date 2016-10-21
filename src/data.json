@@ -13,6 +13,14 @@
       "ogp_description": "this is report for learning vue.js from first.",
       "ogp_img": "ogp.jpg"
     },
+    "list": {
+      "title": "List Rendering",
+      "keywords": "rendering list elements made with v-for property.",
+      "description": "",
+      "path": "/list.html",
+      "ogp_description": "",
+      "ogp_img": "ogp.jpg"
+    },
     "conditional": {
       "title": "Conditional Rendering",
       "keywords": "",
