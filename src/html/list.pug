@@ -11,6 +11,9 @@ block content
       h2.c-article__content-head
         |v-for
       #app-for
+        ul
+          li(v-for="(item, index) in items")
+            |{{ parentMessage }} - {{ index }} - {{ item.message }}
       h2.c-article__content-head
         |Template v-for
       h2.c-article__content-head

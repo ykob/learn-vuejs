@@ -2,16 +2,14 @@ const Vue = require('vue');
 
 export default function() {
   const vm1 = new Vue({
-    el: '#app-if',
+    el: '#app-for',
     data: {
-      ok: true
+      parentMessage: 'parent',
+      items: [
+        { message: 'Foo' },
+        { message: 'Bar' }
+      ]
     }
   })
 
-  const vm2 = new Vue({
-    el: '#app-temp-if',
-    data: {
-      ok: false
-    }
-  })
 };
