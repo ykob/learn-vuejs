@@ -14,8 +14,10 @@ block content
         ul
           li(v-for="(item, index) in items")
             |{{ parentMessage }} - {{ index }} - {{ item.message }}
-      h2.c-article__content-head
-        |Template v-for
+        ul
+          template(v-for="item in items")
+            li {{ item.message }}
+            li(class="divider")
       h2.c-article__content-head
         |Object v-for
       h2.c-article__content-head
