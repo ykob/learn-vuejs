@@ -15,8 +15,8 @@
     },
     "list": {
       "title": "List Rendering",
-      "keywords": "rendering list elements made with v-for property.",
-      "description": "",
+      "keywords": "",
+      "description": "rendering list elements made with v-for property.",
       "path": "/list.html",
       "ogp_description": "",
       "ogp_img": "ogp.jpg"
