@@ -20,6 +20,13 @@ block content
             li(class="divider")
       h2.c-article__content-head
         |Object v-for
+      #app-object
+        ul
+          li(v-for="value in object")
+            |{{ value }}
+        ul
+          li(v-for="(value, key, index) in object")
+            |{{ index }}. {{ key }} : {{ value }}
       h2.c-article__content-head
         |Range v-for
       h2.c-article__content-head

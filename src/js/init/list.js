@@ -12,4 +12,14 @@ export default function() {
     }
   })
 
+  const vm2 = new Vue({
+    el: '#app-object',
+    data: {
+      object: {
+        firstName: 'Yoichi',
+        lastName: 'Kobayashi',
+        age: 32
+      }
+    }
+  })
 };
