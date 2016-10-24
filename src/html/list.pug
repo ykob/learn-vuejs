@@ -29,6 +29,9 @@ block content
             |{{ index }}. {{ key }} : {{ value }}
       h2.c-article__content-head
         |Range v-for
+      #app-range
+        span(v-for="n in 10")
+          |{{ n }}
       h2.c-article__content-head
         |Components and v-for
       h2.c-article__content-head
