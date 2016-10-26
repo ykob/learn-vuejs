@@ -1,0 +1,19 @@
+extends ./layout/_page.pug
+
+block vars
+  -
+    var page = pages.event;
+
+block content
+  .c-article
+    include ./modules/_article-head.pug
+    .c-article__content
+      h2.c-article__content-head
+        |Listening to Events
+      #app-listen
+      h2.c-article__content-head
+        |Method Event Handlers
+      #app-method
+      h2.c-article__content-head
+        |Event Modifiers
+      #app-modifiers
