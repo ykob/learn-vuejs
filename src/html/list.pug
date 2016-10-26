@@ -41,6 +41,17 @@ block content
           v-bind:index="index",
           )
       h2.c-article__content-head
-        |Key
-      h2.c-article__content-head
         |Array Change Detection
+      h3.c-article__content-sub-head
+        |Displaying Filtered / Sorted Results
+      #app-filter
+        p
+          |computed evenNumbers result = {{ evenNumbers }}
+        ul
+          li(v-for="n in evenNumbers")
+            |{{ n }}
+        p
+          |methods even result = {{ even(numbers) }}
+        ul
+          li(v-for="n in even(numbers)")
+            |{{ n }}
