@@ -18,6 +18,12 @@ block content
       h2.c-article__content-head
         |Method Event Handlers
       #app-method
+        p
+          |view message on console when Greet button is pushed.
+        div
+          input(v-model="name")
+          button(@click="greet")
+            |Greet
       h2.c-article__content-head
         |Event Modifiers
       #app-modifiers
