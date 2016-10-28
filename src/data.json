@@ -13,6 +13,14 @@
       "ogp_description": "this is report for learning vue.js from first.",
       "ogp_img": "ogp.jpg"
     },
+    "event": {
+      "title": "Event Handling",
+      "keywords": "",
+      "description": "learn usage of listening events and event handler.",
+      "path": "/event.html",
+      "ogp_description": "",
+      "ogp_img": "ogp.jpg"
+    },
     "list": {
       "title": "List Rendering",
       "keywords": "",
