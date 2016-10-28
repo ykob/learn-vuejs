@@ -11,6 +11,10 @@ block content
       h2.c-article__content-head
         |Listening to Events
       #app-listen
+        button(@click="counter++")
+          |Add 1
+        p
+          |the button above has been clicked {{ counter }} times.
       h2.c-article__content-head
         |Method Event Handlers
       #app-method
