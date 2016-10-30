@@ -14,8 +14,8 @@ export default function() {
       name: 'Yoichi Kobayashi'
     },
     methods: {
-      greet: function(event) {
-        console.log('Hello ' + this.name + '!')
+      greet: function(message, event) {
+        console.log('Hello ' + this.name + '! message is ' + message)
         console.log(event)
       }
     }

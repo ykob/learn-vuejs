@@ -22,7 +22,7 @@ block content
           |view message on console when Greet button is pushed.
         div
           input(v-model="name")
-          button(@click="greet")
+          button(@click="greet('Hi', $event)")
             |Greet
       h2.c-article__content-head
         |Event Modifiers
