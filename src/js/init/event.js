@@ -20,4 +20,13 @@ export default function() {
       }
     }
   })
+
+  const vm3 = new Vue({
+    el: '#app-modifiers',
+    methods: {
+      doThis: function(event) {
+        console.log(event)
+      }
+    }
+  })
 };

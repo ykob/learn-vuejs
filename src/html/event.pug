@@ -25,5 +25,24 @@ block content
           button(@click="greet('Hi', $event)")
             |Greet
       h2.c-article__content-head
-        |Event Modifiers
+        |Event Modifiers & Key Modifiers
       #app-modifiers
+        ul
+          li
+            a(href="#", @click.stop="doThis")
+              |the click event's propagation will be stopped.
+          li
+            form(href="#", @submit.prevent="doThis")
+              div
+                |the submit event will no longer reload the page.
+              input(type="submit" value="submit")
+          li
+            a(href="#", @click.stop.prevent="doThis")
+              |Modifiers can be chained.
+          li(@click.capture="doThis")
+            |use capture mode when adding the event listener.
+          li(@click.self="doThis")
+            |only trigger handler if event.target is the element itself.
+            div
+              |i.e not from a child element.
+        input(@keyup.enter="doThis" placeholder="only call functions when keyup enter." size="40")

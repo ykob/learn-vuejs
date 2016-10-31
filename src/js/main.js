@@ -1,3 +1,5 @@
+const Vue = require('vue');
+
 import initCommon from './init/common.js'
 import initIndex from './init/index.js'
 import initStart from './init/start.js'
