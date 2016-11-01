@@ -8,6 +8,7 @@ import initStyle from './init/style.js'
 import initConditional from './init/conditional.js'
 import initList from './init/list.js'
 import initEvent from './init/event.js'
+import initInput from './init/input.js'
 
 const { pathname } = window.location;
 
@@ -22,6 +23,7 @@ const init = () => {
     case '/conditional.html': initConditional(); break;
     case '/list.html': initList(); break;
     case '/event.html': initEvent(); break;
+    case '/input.html': initInput(); break;
     default:
   }
 }

@@ -1,0 +1,17 @@
+extends ./layout/_page.pug
+
+block vars
+  -
+    var page = pages.input;
+
+block content
+  .c-article
+    include ./modules/_article-head.pug
+    .c-article__content
+      h2.c-article__content-head
+        |Basic Usage
+      #app-basic
+      h2.c-article__content-head
+        |Value Binding
+      #app-value
+      
