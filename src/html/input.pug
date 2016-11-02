@@ -11,7 +11,45 @@ block content
       h2.c-article__content-head
         |Basic Usage
       #app-basic
+        input(v-model="message" placeholder="edit me")
+        p
+          |Message is: {{ message }}
+        textarea(v-model="multilineMessage" placeholder="add multiple line", rows="8", cols="40")
+        p(style="white-space: pre")
+          |Multiline message is:
+          br
+          |{{ multilineMessage }}
+        ul
+          li
+            input(type="checkbox", id="check-jack" v-model="checked", value="Jack")
+            label(for="check-jack")
+              |Jack
+          li
+            input(type="checkbox", id="check-john" v-model="checked", value="John")
+            label(for="check-john")
+              |John
+          li
+            input(type="checkbox", id="check-mike" v-model="checked", value="Mike")
+            label(for="check-mike")
+              |Mike
+        p
+          |cheked persons are
+          span(v-for="name in checked")
+            |{{ ' ' + name }}
+        ul
+          li
+            input(type="radio", id="one" value="One" v-model="picked")
+            label(for="one") one
+          li
+            input(type="radio", id="two" value="Two" v-model="picked")
+            label(for="two") two
+          li
+            input(type="radio", id="three" value="Three" v-model="picked")
+            label(for="three") three
+        p
+          |Picked: {{ picked }}
       h2.c-article__content-head
         |Value Binding
       #app-value
+        
       
