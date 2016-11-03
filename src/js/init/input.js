@@ -7,7 +7,8 @@ export default function() {
       message: '',
       multilineMessage: '',
       checked: [],
-      picked: []
+      picked: [],
+      selected: ''
     }
   })
 }
