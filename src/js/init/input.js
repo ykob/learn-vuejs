@@ -8,7 +8,13 @@ export default function() {
       multilineMessage: '',
       checked: [],
       picked: [],
-      selected: ''
+      selected: '',
+      selectedMulti: [],
+      selectedItems: [
+        { text: 'One', value: 'A' },
+        { text: 'Two', value: 'B' },
+        { text: 'Three', value: 'C' },
+      ]
     }
   })
 }
